@@ -7,6 +7,9 @@ const MessageBox = () => {
         <li>Testing ul list</li>
         <li>Testing ul list</li>
         <li>Testing ul list</li>
+        <li>Testing ul list</li>
+        <li>Testing ul list</li>
+        <li>Testing ul list</li>
       </ul>
     </div>
   );

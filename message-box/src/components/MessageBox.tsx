@@ -1,16 +1,12 @@
+import data from "../assets/data";
+import MessageContent from "./MessageContent";
+
 const MessageBox = () => {
   return (
     <div>
-      <ul>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-        <li>Testing ul list</li>
-      </ul>
+      {data.map((message) => (
+        <MessageContent message={message} />
+      ))}
     </div>
   );
 };

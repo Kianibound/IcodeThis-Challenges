@@ -1,5 +1,5 @@
 export type Message = {
-  imageSrc: string;
+  imgSrc: string;
   name: string;
   text: string;
 };

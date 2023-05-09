@@ -6,66 +6,64 @@ import image4 from "../assets/images/4.webp";
 import image5 from "../assets/images/5.webp";
 import image6 from "../assets/images/6.webp";
 import image7 from "../assets/images/7.webp";
-import image8 from "../assets/images/8.webp";
 import image9 from "../assets/images/9.webp";
 import image10 from "../assets/images/10.webp";
 import image11 from "../assets/images/11.webp";
 
 const data: Message[] = [
   {
-    imageSrc: image1,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image1,
+    name: "john",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image2,
+    imgSrc: image4,
     name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image3,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image2,
+    name: "Mikel",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image4,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image6,
+    name: "Sarah",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image5,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image3,
+    name: "Mike",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
+  },
+
+  {
+    imgSrc: image5,
+    name: "Reza",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image6,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image9,
+    name: "Melina",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
+  },
+
+  {
+    imgSrc: image7,
+    name: "Moji",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
+  },
+
+
+  {
+    imgSrc: image10,
+    name: "Avesta",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
-    imageSrc: image7,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
-  },
-  {
-    imageSrc: image8,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
-  },
-  {
-    imageSrc: image9,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
-  },
-  {
-    imageSrc: image10,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
-  },
-  {
-    imageSrc: image11,
-    name: "Takila",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita eum dicta possimus accusamus impedit saepe. Ex quasi totam asperiores eius voluptatum ",
+    imgSrc: image11,
+    name: "Chris",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
 ];
 

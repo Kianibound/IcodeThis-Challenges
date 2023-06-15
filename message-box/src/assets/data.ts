@@ -13,7 +13,7 @@ import image11 from "../assets/images/11.webp";
 const data: Message[] = [
   {
     imgSrc: image1,
-    name: "john",
+    name: "John",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
   {
@@ -53,7 +53,6 @@ const data: Message[] = [
     name: "Moji",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis nulla expedita",
   },
-
 
   {
     imgSrc: image10,

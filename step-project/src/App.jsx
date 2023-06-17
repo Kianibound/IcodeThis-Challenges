@@ -21,7 +21,7 @@ const App = () => {
     }
   };
   return (
-    <div>
+    <>
       <button className="close" onClick={()=>setIsOpen(!isOpen)}>&times;</button>
       {isOpen && (
         <div className="steps">
@@ -50,7 +50,7 @@ const App = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

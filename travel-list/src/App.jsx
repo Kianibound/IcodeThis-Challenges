@@ -18,6 +18,13 @@ function App() {
       )
     );
   };
+
+  const handleClearItems = () => {
+    const confirmed = window.confirm("Are you sure to Clear List?")
+
+    if(confirmed)
+    setItems([]);
+  };
   return (
     <div className="app">
       <Logo />
@@ -26,6 +33,7 @@ function App() {
         items={items}
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
+        onClearItems={handleClearItems}
       />
       <Footer items={items} />
     </div>
@@ -55,7 +63,9 @@ const Form = ({ onAddItem }) => {
       <h3>What do you need for 🧳 packing?</h3>
       <select value={quantity} onChange={(e) => setQuantity(+e.target.value)}>
         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-          <option value={num}>{num}</option>
+          <option key={num} value={num}>
+            {num}
+          </option>
         ))}
       </select>
       <input
@@ -69,11 +79,26 @@ const Form = ({ onAddItem }) => {
   );
 };
 
-const PackingList = ({ items, onDeleteItem, onToggleItem }) => {
+const PackingList = ({ items, onDeleteItem, onToggleItem, onClearItems }) => {
+  const [sortBy, setSortBy] = useState("input");
+
+  let sortedItems;
+
+  if (sortBy === "input") sortedItems = items;
+
+  if (sortBy === "description")
+    sortedItems = items
+      .slice()
+      .sort((a, b) => a.description.localeCompare(b.description));
+
+  if (sortBy === "packed")
+    sortedItems = items
+      .slice()
+      .sort((a, b) => Number(a.packed) - Number(b.packed));
   return (
     <div className="list">
       <ul>
-        {items.map((item) => (
+        {sortedItems.map((item) => (
           <Item
             item={item}
             key={item.id}
@@ -82,6 +107,14 @@ const PackingList = ({ items, onDeleteItem, onToggleItem }) => {
           />
         ))}
       </ul>
+      <div className="actions">
+        <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <option value="input">Sort by input order</option>
+          <option value="description">Sort by description</option>
+          <option value="packed">Sort by packed status</option>
+        </select>
+        <button onClick={onClearItems}>Clear Items</button>
+      </div>
     </div>
   );
 };
